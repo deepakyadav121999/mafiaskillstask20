@@ -1,0 +1,121 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.header{
+    height: 60px;
+    display: flex;
+    width: 100%;
+    background-color: whitesmoke;
+    border-bottom: 0.1px solid rgb(236, 235, 235);
+    align-items: center;
+    gap: 50px;
+
+}
+
+.content{
+    display: flex;
+    width: 100%;
+}
+.left{
+    display: flex;
+    width: 65%;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    gap: 20px;
+}
+.shoe_container{
+ width: 32%;
+background-color: rgb(255, 255, 255);
+ display: flex;
+ flex-direction: column;
+
+ align-items: center;
+ border: 0.1px solid rgb(236, 234, 234);
+ justify-content: center;
+ border-radius: 7px;
+
+ 
+}
+.shoe_container>img{
+    width: 200px;
+    height: 200px;
+}
+.right{
+    background-color: whitesmoke;
+    width: 30%;
+    height: 100%;
+    border: 0.1px solid rgb(228, 224, 224);
+}
+.list_left>img{
+ width: 50px;
+ height: 50px;
+}
+.list_left{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    
+}
+.inside_list{
+    display: flex;
+    justify-content: center;
+    border: 0.1px solid rgb(218, 215, 215);
+    border-radius: 7px;
+  
+}
+.list_right{
+    display: flex;
+    flex-direction: column;
+   
+    height: 90px;
+    width: 60%;
+    justify-content: flex-start;
+}
+.last_btns{
+    width: 20%;
+    display: flex;
+
+   align-items: end;
+   justify-content: center;
+   gap: 10px;
+   font-size: large;
+}
+.minus,.plus{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(201, 177, 127);
+    cursor: pointer;
+}
+.list{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   background-color: whitesmoke;
+  gap: 5px;
+    padding: 10px;
+}
+.shoe_details{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(218, 182, 149);
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    align-items: center;
+    height: 50%;
+}
+.shoe_name{
+    font-size: x-large;
+    font-weight: 600;
+}
+.add_cartBtn{
+    border: 0.1px solid black;
+    border-radius:10px;
+    height: 30px;
+    width: 95px;
+    cursor: pointer;
+}
