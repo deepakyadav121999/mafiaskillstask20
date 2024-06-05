@@ -74,13 +74,18 @@ function App() {
     const updatedItems = added.map(i => {
       if (i.name === item.name) {
         const newQuantity = i.quantity + change;
-    
-        return { ...i, quantity: Math.max(newQuantity, 1) };
+        if (newQuantity <= 0) {
+          
+          return null;
+        } else {
+          return { ...i, quantity: newQuantity };
+        }
       }
       return i;
-    });
+    }).filter(Boolean); 
     setAdded(updatedItems);
   };
+  
 
   return (
     <div className="App">
